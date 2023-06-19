@@ -1,0 +1,15 @@
+.screenWrapper {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.screenText {
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 600;
+  color: #FFF;
+}
