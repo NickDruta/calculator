@@ -1,13 +1,22 @@
 import React from "react";
 import { buttons } from "../config/config";
 import { Button } from "shared/Button";
-import cls from './Buttons.module.scss';
+import cls from "./Buttons.module.scss";
 
-const Buttons = () => {
+interface Props {
+  onClick: (_: string) => void;
+}
+
+const Buttons = ({ onClick }: Props) => {
   return (
     <div className={cls.buttonsWrapper}>
-      {buttons.map((button) => (
-        <Button description={button.description} type={button.type} />
+      {buttons.map((button, index) => (
+        <Button
+          key={index}
+          description={button.description}
+          type={button.type}
+          onClick={onClick}
+        />
       ))}
     </div>
   );

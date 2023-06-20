@@ -4,7 +4,7 @@ export const buttons = [
     type: "action"
   },
   {
-    description: "±",
+    description: "",
     type: "action"
   },
   {
