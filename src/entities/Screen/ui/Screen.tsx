@@ -1,11 +1,14 @@
-import React from 'react';
-import cls from './Screen.module.scss';
+import React from "react";
+import cls from "./Screen.module.scss";
 
-const Screen = () => {
+interface Props {
+  text: number;
+}
 
+const Screen = ({ text }: Props) => {
   return (
     <div className={cls.screenWrapper}>
-      <p className={cls.screenText}>0</p>
+      <p className={cls.screenText}>{text}</p>
     </div>
   );
 };
